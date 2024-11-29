@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Zaqan</title>
+  <link rel="shortcut icon" href="logo_pequena.png">
+  <!-- Bootstrap CSS via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Script JS do Bootstrap (deve ser incluído após o jQuery, se você usar jQuery) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+
+  <div class= "topo">
+    <div class="container-retangulos">
+      <div class="retangulo retangulo_vermelho retangulo_esquerda"></div>
+      <div class="retangulo retangulo_azul retangulo_direita"></div>
+    </div>
+  
+    <nav class="navbar navbar-expand-lg" style="background-color: #252629;">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse d-flex justify-content-around align-items-center" id="navbarNavDropdown">
+          
+          <!-- Itens da esquerda -->
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link fs-4" href="#servicos" style="color: #f1f4ff;">Serviços</a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link fs-4" href="#endereco" style="color: #f1f4ff;">Endereços</a>
+          </li>
+    
+          <!-- Logo centralizada -->
+          <div class="navbar-brand">
+            <img src="logo_zaqan.png" alt="Zaquan" height="80px" width="auto" sizes="centralizada">
+          </div>
+    
+          <!-- Itens da direita -->
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link fs-4" href="#Destaque" style="color: #f1f4ff;">Horários</a>
+          </li>
+          <li class="nav-item fs-4 d-flex dropdown align-items-center">
+            <a class="nav-link dropdown-toggle" href="#" role="button" style="color: #f1f4ff;" data-bs-toggle="dropdown" aria-expanded="false">
+              Redes Socias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://instagram.com/barbeariazaqan?igshid=YmMyMTA2M2Y=">Instagram <img src="https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png" width="40px" height="auto" alt=""></a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#Avaliar">Avaliar</a></li>
+            </ul>
+          </li>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container-retangulos">
+      <div class="retangulo retangulo_vermelho retangulo_direita"></div>
+      <div class="retangulo retangulo_azul retangulo_esquerda"></div>
+    </div>
+  
+  </div>
+
+
+  <div id="Destaque" class="Destaque">
+    <div class="Funcionamentos">
+        <p class="fs-1">Funcionamentos:</p>
+        <ol>
+            <li class="fs-5 horario">Ter-Sex: 09h às 12h / 13:30h às 19h</li>
+            <li class="fs-5 horario">Sábado: 09h às 12h / 13h às 17h </li>
+        </ol>
+    </div>
+
+    <!-- Linha Vertical -->
+    <div class="linha-vertical"></div>
+
+    <!-- Bot�o Agende seu corte -->
+    <a href="https://wa.me/5547999411778?text=Ol%C3%A1%2C+gostaria+de+agendar+um+hor%C3%A1rio%21">
+      <button type="button" class="btn btn-primary btn-lg botao_corte">Agende seu corte! <img src="whatsapp-white-icon.png" class="icon" alt=""></button>
+    </a>
+</div>
+
+<div id="servicos" class="plano_de_fundo">
+  <div   class="servicos container">
+    <h3>Nossos Serviços:</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="corte_cabelo.jpg" class="card-img-top" alt="Imagem">
+          <div class="card-body">
+            <h5 class="card-title">Corte de cabelo simples</h5>
+            <p class="card-text">Transforme seu visual com um corte impecável e cheio de estilo! (30 min)</p>
+            <p class="card-text">R$ 30,00</p>
+            <a href="https://api.whatsapp.com/send/?phone=5547999411778&text=Ol%C3%A1+%21+gostaria+de+agendar+um+corte+de+cabelo+simples">
+              <p class="btn btn-primary">Agendar</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="corte_barba.jpg" class="card-img-top" alt="Imagem">
+          <div class="card-body">
+            <h5 class="card-title">Barba</h5>
+            <p class="card-text">Barba bem feita, com o cuidado e a precisão que você merece! (30 min)</p>
+            <p class="card-text">R$ 30,00</p>
+            <a href="https://api.whatsapp.com/send/?phone=5547999411778&text=Ol%C3%A1+%21+gostaria+de+agendar+um+corte+de+barba">
+              <p class="btn btn-primary">Agendar</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="corte_cabelo+barba.jpg" class="card-img-top" alt="Imagem">
+          <div class="card-body">
+            <h5 class="card-title">Corte e barba</h5>
+            <p class="card-text">O combo perfeito para todo homem, com preço especial! (50 min)</p>
+            <p class="card-text">R$ 55,00</p>
+            <a href="https://api.whatsapp.com/send/?phone=5547999411778&text=Ol%C3%A1+%21+gostaria+de+agendar+um+corte+de+barba">
+              <p class="btn btn-primary">Agendar</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a class="btn btn-primary mais" href="servicos.html">Conheça mais!</a>
+    </div>
+  </div>
+</div>
+
+  
+  <!-- Seção de Localização -->
+<section id="endereco" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Texto à esquerda -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="fs-1 text-dark">Visite-nos</h2>
+        <h3 class="fs-5 text-muted">Estamos localizados em um ponto estratégico para atender você com toda comodidade</h3>
+        <ul class="list-unstyled fs-5">
+          <li>📍 <strong>Endereço:</strong> R. David Adão Schmitt, 180 - Barra do Rio, Itajaí, SC</li>
+          <li>📮 <strong>CEP:</strong> 88305-400</li>
+          <li>📱 <strong>Telefone:</strong> (47) 99941-1778</li>
+        </ul>
+        
+        <a href="https://www.google.com/maps/dir/?api=1&origin=current+location&destination=R.+David+Ad%C3%A3o+Schmitt,+180+-+Barra+do+Rio,+Itaja%C3%AD,+SC,+88888-888" 
+        target="_blank" 
+         class="btn btn-primary mt-3">
+         <strong style="font-weight: bold;">Traçar rota</strong>
+        </a>
+
+      </div>
+      <!-- Mapa à direita -->
+      <div class="col-md-6">
+        <div class="map-container ratio ratio-16x9 shadow-lg rounded">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.369218484347!2d-48.686750388295295!3d-26.891774976562278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cd75093d6975%3A0x2720ecf3235b8ab7!2sBarbearia%20Zaqan!5e0!3m2!1spt-BR!2sbr!4v1732212750089!5m2!1spt-BR!2sbr" 
+            width="600" height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="endereco" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+        <!-- widget instagram esquerda -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-6de82579-61be-4c27-b96a-8fae2484cd42" data-elfsight-app-lazy></div>
+
+
+      <!-- Texto à direita -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="fs-1 text-dark">Conheça nosso Instagram!</h2>
+        <h3 class="fs-5 text-muted">
+          Lá você encontra <strong style="color: #1d2024; font-weight: bold;">referências</strong> de cortes, 
+          <strong style="color: #1d2024; font-weight: bold;">fotos</strong> dos serviços prestados, 
+          <strong style="color: #1d2024; font-weight: bold;">vídeos</strong> sobre a barbearia e mais.
+      </h3>
+      
+        <a href="https://instagram.com/barbeariazaqan?igshid=YmMyMTA2M2Y=" 
+        target="_blank" 
+         class="btn btn-primary mt-3">
+         <strong style="font-weight: bold;">Instagram</strong>  
+         <img src="https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png" width="40px" height="auto" alt="">
+        </a>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+<div class = "avalicaoes">
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div id="Avaliar" class="elfsight-app-3307cb29-5400-44ab-8dcc-141b7120d85b" data-elfsight-app-lazy></div>
+</div>
+
+
+ <!-- Rodapé -->
+ <footer class="bg-dark text-white">
+  <div class="container py-5">
+    <div class="row text-center text-md-start align-items-start">
+      
+      <!-- Coluna 1: Sobre Nós -->
+      <div class="col-md-4 mb-4">
+        <h4 class="mb-3">Sobre Nós</h4>
+        <p>
+          A Barbearia Zaqan é dedicada a proporcionar cortes de cabelo e barba com excelência, em um ambiente moderno e acolhedor.
+        </p>
+      </div>
+
+      <!-- Coluna 2: Links Rápidos -->
+      <div class="col-md-4 mb-4">
+        <h4 class="mb-3">Links Rápidos</h4>
+        <ul class="list-unstyled">
+          <li><a href="#servicos" class="text-white text-decoration-none d-block mb-2">Serviços</a></li>
+          <li><a href="#endereco" class="text-white text-decoration-none d-block mb-2">Endereço</a></li>
+          <li><a href="#Destaque" class="text-white text-decoration-none d-block mb-2">Horários</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Contato -->
+      <div class="col-md-4 mb-4">
+        <h4 class="mb-3">Contato</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2">📍 <strong>Endereço:</strong> R. David Adão Schmitt, 180 - Barra do Rio, Itajaí, SC</li>
+          <li class="mb-2">📮 <strong>CEP:</strong> 88305-400</li>
+          <li class="mb-2">📱 <strong>Telefone:</strong> <a href="tel:+5547999411778" class="text-white text-decoration-none">(47) 99941-1778</a></li>
+          <li>📷 <strong>Instagram:</strong> <a href="https://www.instagram.com/barbeariazaqan" target="_blank" class="text-white text-decoration-none">@barbeariazaqan</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Linha Inferior -->
+  <div class="py-3" style="background-color: #1c1d1f;">
+    <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row">
+      <p class="mb-0">&copy; 2024 Barbearia Zaqan. Todos os direitos reservados.</p>
+      <div>
+        <a href="https://www.instagram.com/barbeariazaqan" target="_blank" class="text-white me-3">
+          <i class="bi bi-instagram fs-4"></i>
+        </a>
+        <a href="https://wa.me/5547999411778" target="_blank" class="text-white">
+          <i class="bi bi-whatsapp fs-4"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
+
+</body>
+</html>
+

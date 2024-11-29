@@ -1,0 +1,381 @@
+@font-face {
+  font-family: zaqan1;
+  src: url(Rye-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: zaqan2;
+  src: url(Helvetica\ Neue\ LT\ Pro\ 55\ Roman.otf) format('opentype');
+}
+
+html {
+  scroll-behavior: smooth; /* Isso faz a rolagem ser suave */
+}
+
+.topo{
+  position: fixed;
+  top: 0; /* Fixando no topo */
+  left: 0;
+  right: 0;
+  z-index: 10; /* Para garantir que o topo fique acima da navbar e outros conte�dos */
+  padding-bottom: 10px; /* Espa�o entre o topo e a navbar */
+}
+
+
+/* Centraliza os itens da navbar */
+.navbar .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-family: 'zaqan1';  /* Aplica a fonte 'zaqan1' nos links da navbar */
+  }
+
+  .dropdown-menu {
+    background-color: #252629; /* Altere para a cor desejada */
+}
+
+.dropdown-item {
+    color: #f1f4ff; /* Cor do texto de cada item */
+}
+
+.dropdown-item:hover {
+    background-color: #4f5157; /* Altere para a cor desejada ao passar o mouse */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+.dropdown-divider {
+    border-top: 1px solid #f1f4ff; /* Altere a cor da divis�ria */
+}
+
+  #Destaque {
+    scroll-margin-top: 125px; /* Ajuste conforme necess�rio */
+  }
+
+/* ISSO AQUI DEIXA A IMAGEM DE FUNDO MAIS ESCURA ------------------------------------------------------------------ */
+
+.Destaque::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 0; 
+}
+
+
+.Destaque > * {
+    position: relative;
+    z-index: 1; 
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+  
+.Destaque {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Distribui os elementos de forma equidistante */
+  gap: 20px;
+  padding: 10px;
+  background-image: url('barber-4618697_1280.jpg');
+  background-size: cover;  
+  background-position: center;
+  color: #f1f4ff;
+  position: relative;
+  height: 400px; /* Ajuste conforme necess�rio */
+  width: 100%;
+  font-family: 'zaqan1';
+  margin-top: 125px;
+  transition: background-image 1s ease-in-out; /* Transi��o suave */
+}
+
+.Destaque a{
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Herda a cor do elemento pai (ou pode definir uma cor personalizada) */
+}
+
+@media screen and (max-width: 1400px) {
+  /*NAVBAR */
+  .navbar .navbar-collapse .nav-item {
+      display: none !important; /* Força a aplicação da regra */
+  }
+
+  /* LOGO ZAQAN */
+  .navbar-brand img {
+      width: 100px; /* Novo tamanho da imagem */
+      height: auto; /* Mantém as proporções */
+  }
+
+  .Destaque .Funcionamentos .fs-1 {
+    font-size: 1.0rem !important; /* Menor que o padrão da classe fs-1 */
+}
+
+.Destaque .Funcionamentos .fs-5 {
+    font-size: 0.7rem !important; /* Menor que o padrão da classe fs-5 */
+}
+
+/* Reduzir tamanho do botão */
+.Destaque .btn {
+  font-size: 0.7rem; 
+  padding: 8px; /* Ajusta o espaçamento interno para manter o tamanho do botão consistente */
+}
+
+/* Ajustar o ícone dentro do botão */
+.Destaque .btn .icon {
+  width: 24px; /* Define o tamanho do ícone */
+  height: auto; 
+}
+
+.servicos .card {
+  left:12%; /* Garante que os cards ocupem 30% da largura em telas menores, mas flexível */
+  margin: 10px; /* Adiciona um pequeno espaço entre os cards */
+}
+
+.servicos .card {
+  left:8%; /* Garante que os cards ocupem 30% da largura em telas menores, mas flexível */
+  margin: 10px; /* Adiciona um pequeno espaço entre os cards */
+}
+
+}
+
+
+/* Para garantir que a linha vertical seja posicionada corretamente */
+.linha-vertical {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 50%; /* Centraliza a linha vertical */
+  width: 4px; /* Espessura da linha */
+  background-color: #f1f4ff;
+  z-index: 1;
+  border-radius: 2px;
+}
+
+#servicos {
+  scroll-margin-top: 125px; /* Ajuste conforme necess�rio */
+}
+
+#endereco {
+  scroll-margin-top: 125px; /* Ajuste conforme necess�rio */
+}
+
+/* Estilo para os itens dentro da div Funcionamentos */
+.Funcionamentos {
+  display: flex;
+  flex-direction: column; /* Para os itens ficarem um em cima do outro */
+  align-items: flex-start; /* Alinha os itens � esquerda */
+  max-width: 40%;
+  font-family: 'zaqan1';
+}
+
+.Funcionamentos p {
+  margin: 0;
+}
+
+.Funcionamentos ol {
+  margin: 0;
+  list-style-type: disc
+}
+
+.horario{
+  font-family: 'zaqan2', sans-serif;
+}
+
+/* Bot�o de corte */
+.botao_corte {
+  padding: 10px 20px;
+  background-color: #25D366;
+  border-color: #25D366;
+  color: #f1f4ff;;
+  display: flex; /* Usar flexbox para alinhar imagem e texto */
+  align-items: center; /* Alinha verticalmente o texto e a imagem */
+  gap: 10px; /* Espa�o entre o texto e a imagem */
+}
+
+.botao_corte img {
+  max-height: 20px; /* Ajuste a altura m�xima da imagem para que ela se ajuste ao tamanho do bot�o */
+  width: auto; /* Mant�m a propor��o original da imagem */
+}
+
+.botao_corte:hover {
+  background-color: #f1f4ff;; /* Cor de fundo quando passar o mouse */
+  color: #25D366; /* Cor do texto quando passar o mouse */
+  border-color: #25D366; /* Cor da borda quando passar o mouse */
+}
+
+.botao_corte:hover .icon {
+  content: url('whatsapp.png'); /* Troca a imagem no hover */
+  transform: scale(1.2);
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px; /* Espaço entre os cards */
+  justify-content: center; /* Centraliza os cards */
+  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+}
+
+
+.card {
+  flex: 1 1 calc(33.333% - 20px); /* Ajusta largura para 3 por linha com espaçamento */
+  max-width: 18rem; /* Garante que a largura não ultrapasse */
+  left: 70px;
+  font-family: 'zaqan2';
+  background-color: #252629;
+  color:#f1f4ff;
+  border-color: #f1f4ff;
+  border-width: 3px;
+  border-style: dashed;
+  border-radius: 5%;
+}
+
+.card img{
+ border-radius: 7%;
+}
+
+.card a .btn {
+  background-color: #436A9F;
+  border-color: #436A9F;
+  color: #f1f4ff;
+}
+
+.card a .btn:hover{
+  background-color: #f1f4ff;
+  color: #436A9F;
+}
+
+.plano_de_fundo {
+  background-image: url(Fundo_preto_2.png);
+  background-position: center; /* Centraliza a imagem */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.plano_de_fundo h2{
+  font-family: 'zaqan1';
+  color: #f1f4ff;
+}
+
+.plano_de_fundo h3{
+  font-family: 'zaqan1';
+  color: #f1f4ff;
+}
+
+.servicos {
+  background-color: #252629; /* Cor de fundo s�lida para a se��o de servi�os */
+  padding: 20px; /* Adiciona espa�amento interno */
+  position: relative; /* Necess�rio para usar o z-index */
+  z-index: 2; /* Garante que a .servicos fique acima da imagem de fundo */
+  color: #f1f4ff; /* Garante que o texto seja vis�vel */
+
+  /* Sombra para o efeito 3D */
+  box-shadow: 0 20px 12px rgba(0, 0, 0, 0.4), 0 -20px 12px rgba(0, 0, 0, 0.4), 20px 0 12px rgba(0, 0, 0, 0.4), -20px 0 12px rgba(0, 0, 0, 0.4);
+
+ 
+  border-radius: 20px;
+  border-width: 3px;
+}
+
+.mais{
+  font-family: 'zaqan2';
+  background-color: #436A9F;
+  border-color: #436A9F;
+  color: #f1f4ff;
+}
+
+.mais:hover{
+  font-family: 'zaqan2';
+  background-color: #f1f4ff;
+  color: #436A9F;
+}
+
+.container-retangulos {
+  position: relative; /* Define o referencial de posicionamento */
+  height: 10px; /* Garante altura adequada para os ret�ngulos */
+}
+
+.retangulo {
+  height: 10px; /* Altura dos ret�ngulos */
+  position: absolute; /* Posicionamento absoluto relativo ao pai */
+  top: 0; /* Fixa ao topo do cont�iner */
+}
+
+.retangulo_esquerda{
+  left: 0;
+}
+
+.retangulo_direita{
+  right: 0;
+}
+
+.retangulo_vermelho {
+  background-color: #c82627;
+  width: 50%; /* Metade da largura da p�gina */
+}
+
+.retangulo_azul {
+  background-color: #2b4f9c;
+  width: 50%; /* Metade da largura da p�gina */
+}
+
+#endereco{
+  background-color: #f1f4ff;
+}
+
+#endereco h2{
+  font-family: 'zaqan1';
+}
+
+#endereco h3{
+  font-family: 'zaqan2';
+}
+
+#endereco .btn{
+  background-color:#436A9F;
+  border-color: #436A9F;
+  color:#f1f4ff;
+}
+
+#endereco .btn:hover{
+  background-color:#f1f4ff;
+  border-color: #436A9F;
+  color:#436A9F;
+}
+
+.elfsight-app-3307cb29-5400-44ab-8dcc-141b7120d85b{
+  background-image: url('Fundo_azul.png') !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  scroll-margin-top: 125px !important;
+}
+
+
+footer{
+  font-family: 'zaqan2';
+}
+
+footer h4{
+  font-family: 'zaqan1';
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #0d6efd; /* Azul padrão do Bootstrap */
+}
+
+footer img {
+  transition: transform 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
+
+.botao_zap a{
+  text-decoration: none;
+}
+ 
+  
